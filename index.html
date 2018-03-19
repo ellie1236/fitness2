@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Fitness App</title>
+    <link rel="stylesheet" type="text/css" href="fitness.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="index.js"></script>
+    
+</head>
+    
+   
+<body> 
+    
+     <div class="myPanel" id="myPanel"> 
+            
+           
+         <h2>Navigate Between Pages</h2>
+   
+            <p>You can close the panel by clicking outside the panel, pressing the Esc key, by swiping, or by clicking the button below:</p>
+         
+            <a href="#pageone" >Home</a>
+            
+            <a href="#running" >Running Tracker</a>
+            
+            <a href="#pedemoter" >Pedometer</a>
+ 
+        </div> 
+    
+    
+    
+    <div data-role="page" id="pageone">
+  
+        <div data-role="header">
+   
+            <h1>Running Buddy</h1>
+            
+        
+            <p align="center">Welcome to your Running Buddy. Use this app to track your running routes and count your steps.</p>
+        </div>
+    
+        
+        
+        
+ <div data-role="main" class="ui-content">
+     
+     <a href="#myPanel" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini">Menu</a>
+    
+     <p>Click here for the running Tracker</p>
+  
+     <a href="#running"> Running Tracker </a>
+     
+         <p>Click here for the pedometer</p>
+  
+     <a href="#pedemoter"> Pedometer </a>
+  
+        </div>
+</div>
+    
+    
+        
+       <div data-role="page" id="running">
+           
+  <div data-role="header">
+      
+    <h1>This is your Running Tracker</h1>
+      
+      </div>
+      
+      
+       <div data-role="main" class="ui-content">
+           
+            <p align ="center"> Welcome to your Running Tracker. Use this section to track your runs and locate your location.</p>
+           
+        <a href="#myPanel" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini">Menu</a>
+           </div>
+           
+           <div id="Map" style="width:500px;height:500px; background:blue; align:center"> 
+           
+    
+               
+           </div>
+        
+    </div>
+    
+    
+    
+    
+     <div data-role="page" id="pedemoter">
+           
+  <div data-role="header">
+      
+      </div>
+    <h1>This is your Pedometer </h1>
+         
+      
+       <div data-role="main" class="ui-content">
+           <p align ="center"> Welcome to your Pedomter. Use this section to count your steps. </p>
+           
+        <a href="#myPanel" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-mini">Menu</a>
+        
+         </div>
+         
+</div>
+    
+    </body>
+
+</html> 
